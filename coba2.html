@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samosir Paradise Tour</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #eef2f7;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .menu a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn {
+            background: gold;
+            padding: 10px 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        /* HERO (GAMBAR BESAR) */
+        .hero {
+            height: 400px;
+            background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .hero-text {
+            position: absolute;
+            color: white;
+            top: 120px;
+            left: 40px;
+        }
+
+        /* LAYOUT */
+        .container {
+            display: flex;
+            margin-top: -100px;
+            padding: 20px;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 30%;
+            background: linear-gradient(to bottom, #2c3e50, #3498db);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .sidebar ul {
+            padding-left: 20px;
+        }
+
+        /* CONTENT */
+        .content {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h3>Samosir Paradise</h3>
+    <div class="menu">
+        <a href="#">Tentang</a>
+        <a href="#">Keunggulan</a>
+        <a href="#">Kontak</a>
+    </div>
+    <a href="#" class="btn">Lihat Paket</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+        <h1>Samosir Paradise Tour & Travel</h1>
+        <p>Jelajahi Samosir dan Danau Toba dengan pengalaman terbaik</p>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>Tentang Kami</h2>
+        <p>Kami menyediakan layanan wisata terbaik di Pulau Samosir dengan pengalaman nyaman dan profesional.</p>
+
+        <h3>Jasa Kami:</h3>
+        <ul>
+            <li>Paket wisata Samosir</li>
+            <li>Sewa mobil</li>
+            <li>Tour guide</li>
+            <li>Wisata budaya Batak</li>
+            <li>Penyewaan kapal</li>
+        </ul>
+    </div>
+
+    <!-- MAIN -->
+    <div class="content">
+
+        <div class="card">
+            <h2>Tentang Bisnis</h2>
+            <p>Samosir Paradise Tour & Travel adalah usaha pariwisata yang fokus pada wisata lokal di Pulau Samosir dan Danau Toba dengan pelayanan terbaik.</p>
+        </div>
+
+        <div class="card">
+            <h2>Keunggulan</h2>
+            <ul>
+                <li>Harga terjangkau</li>
+                <li>Pelayanan profesional</li>
+                <li>Destinasi lengkap</li>
+                <li>Guide berpengalaman</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Kontak</h2>
+            <p>WhatsApp: 0812-3456-7890</p>
+            <p>Email: samosir@gmail.com</p>
+            <p>Alamat: Samosir, Sumatera Utara</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
